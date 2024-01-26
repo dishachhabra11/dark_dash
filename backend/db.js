@@ -1,5 +1,5 @@
 const admin = require('firebase-admin');
-const serviceAccount = require('./digital-door-ac9be-firebase-adminsdk-996uf-1e7a697f45.json');
+const serviceAccount = require('./digital-door-d0ace-firebase-adminsdk-34ysd-e69d7c3f19.json');
 
 const firebaseConfig = {
   apiKey: "AIzaSyDXI9YW8HuEkn_KVUrU-LC5m1HwN1QEgO8",
