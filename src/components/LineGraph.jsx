@@ -64,7 +64,7 @@ export const data = {
         21343, 23720, 33323,
       ],
       borderColor: "rgb(255, 99, 132)",
-      backgroundColor: "rgb(255,0,0)",
+      backgroundColor: "rgba(255,0,0,0.6)",
       fill: {
         target: "origin", // Set the fill options
         above: "rgba(255, 0, 0, 0.3)",

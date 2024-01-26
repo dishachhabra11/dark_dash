@@ -161,10 +161,21 @@ const Dashboard = () => {
             </div>
             {/* line chart */}
             <div className="row ">
-              <div className="col-12 grid-margin">
+              <div className="col-8 grid-margin">
                 <div className="card">
 
-                <div style={{width:"50%",height:"50vh"}}><LineGraph/></div>
+                <div style={{width:"100%",height:"50vh"} }><LineGraph/></div>
+    
+
+                    
+                  
+                </div>
+              </div>
+              {/* bar graph */}
+              <div className="col-4 grid-margin">
+                <div className="card">
+
+                <div style={{width:"50%",height:"50vh"}}></div>
     
 
                     
@@ -172,6 +183,9 @@ const Dashboard = () => {
                 </div>
               </div>
             </div>
+            
+              
+            
             {/* table ranking  */}
             <div class="row">
               <div class="col-md-6 col-xl-4 grid-margin stretch-card">
@@ -195,50 +209,9 @@ const Dashboard = () => {
               <div class="col-md-12 col-xl-4 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">To do list</h4>
-                    <div class="add-items d-flex">
-                      <input type="text" class="form-control todo-list-input" placeholder="enter task.."/>
-                      <button class="add btn btn-primary todo-list-add-btn">Add</button>
-                    </div>
-                    <div class="list-wrapper">
-                      <ul class="d-flex flex-column-reverse text-white todo-list todo-list-custom">
-                        <li>
-                          <div class="form-check form-check-primary">
-                            <label class="form-check-label">
-                              <input class="checkbox" type="checkbox"/> Create invoice </label>
-                          </div>
-                          <i class="remove mdi mdi-close-box"></i>
-                        </li>
-                        <li>
-                          <div class="form-check form-check-primary">
-                            <label class="form-check-label">
-                              <input class="checkbox" type="checkbox"/> Meeting with Alita </label>
-                          </div>
-                          <i class="remove mdi mdi-close-box"></i>
-                        </li>
-                        <li class="completed">
-                          <div class="form-check form-check-primary">
-                            <label class="form-check-label">
-                              <input class="checkbox" type="checkbox" checked/> Prepare for presentation </label>
-                          </div>
-                          <i class="remove mdi mdi-close-box"></i>
-                        </li>
-                        <li>
-                          <div class="form-check form-check-primary">
-                            <label class="form-check-label">
-                              <input class="checkbox" type="checkbox"/> Plan weekend outing </label>
-                          </div>
-                          <i class="remove mdi mdi-close-box"></i>
-                        </li>
-                        <li>
-                          <div class="form-check form-check-primary">
-                            <label class="form-check-label">
-                              <input class="checkbox" type="checkbox"/> Pick up kids from school </label>
-                          </div>
-                          <i class="remove mdi mdi-close-box"></i>
-                        </li>
-                      </ul>
-                    </div>
+                    <h4 class="card-title">Map</h4>
+                    
+                  
                   </div>
                 </div>
               </div>
@@ -246,12 +219,7 @@ const Dashboard = () => {
             
           </div>
           
-          <footer class="footer">
-            <div class="d-sm-flex justify-content-center justify-content-sm-between">
-              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2021</span>
-              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin template</a> from Bootstrapdash.com</span>
-            </div>
-          </footer>
+          
          
         </div>
     </div>
