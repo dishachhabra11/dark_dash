@@ -1,10 +1,10 @@
 import React from 'react';
 import { LineGraph } from './LineGraph';
-import Piechart from './Piechart';
+import Donut from './Donut'
 import RegionTable from './RegionTable';
 import Table from './ranked';
 import UnpaidTable from './LeastRanked';
-import ProgressBar from './ProgressBar';
+import ReactSpeedometer from "react-d3-speedometer";
 import ContextualExample from './ProgressBar';
 
 const Dashboard = () => {
@@ -131,8 +131,7 @@ const Dashboard = () => {
               <div class="col-md-8 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    
-                   
+
                   </div>
                 </div>
               </div>
@@ -151,13 +150,37 @@ const Dashboard = () => {
                {/* pie chart */}
               <div class="col-sm-6 grid-margin">
                 <div class="card">
-                  <div class="card-body">
-                   <Piechart/>
-                  </div>
-                </div>
+                  <div class="card-body"  style={{
+    width: "300px",
+    height: "229px",
+    display:"flex",
+    
+    borderRadius:"5px",
+    justifyContent:"center",
+    position:"relative",
+    margin:"auto",
+                  }}>
+                  
+    <ReactSpeedometer
+        fluidWidth={false}
+        minValue={0}
+        maxValue={100}
+        value={86}
+        needleColor="#793FDF"
+        segments={5}
+        startColor="#793FDF"
+        endColor="#14C38E"
+        ringWidth={15}
+        // textColor=""
+
+    />
+     <p >Tax paid <h1>86%</h1></p>
+     
+   
+     
+     </div>         
+     </div> 
               </div>
-            
-             
             </div>
             {/* line chart */}
             <div className="row ">
@@ -165,10 +188,6 @@ const Dashboard = () => {
                 <div className="card">
 
                 <div style={{width:"100%",height:"50vh"} }><LineGraph/></div>
-    
-
-                    
-                  
                 </div>
               </div>
               {/* bar graph */}
@@ -176,10 +195,6 @@ const Dashboard = () => {
                 <div className="card">
 
                 <div style={{width:"50%",height:"50vh"}}></div>
-    
-
-                    
-                  
                 </div>
               </div>
             </div>
